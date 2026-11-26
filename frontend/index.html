@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,7 +32,18 @@
                 <li><a href="#about">About</a></li>
             </ul>
 
-            <a href="#planner" class="nav-button">Plan a trip</a>
+            <!-- AUTH BUTTONS -->
+            <div class="nav-auth">
+
+                <a href="signin/index.html" class="nav-signin">
+                    Sign in
+                </a>
+
+                <a href="signup/index.html" class="nav-button">
+                    Sign up
+                </a>
+
+            </div>
 
         </nav>
     </header>
@@ -64,7 +76,9 @@
 
         <div class="hero-content">
 
-            <h1><span id="typing-text"></span><span class="cursor"></span></h1>
+            <h1>
+                <span id="typing-text"></span><span class="cursor"></span>
+            </h1>
 
             <p>
                 Traveler is a Sri Lanka travel platform where you book your hotel,
@@ -73,7 +87,7 @@
 
             <div class="hero-buttons">
 
-                <a href="#planner" class="primary-button">
+                <a href="signup/index.html" class="primary-button">
                     Get started
                 </a>
 
@@ -107,7 +121,7 @@
 
             <p>
                 Planning a trip usually means many tabs: one for hotels,
-                one for buses and trains, one for notes. Travello puts hotel
+                one for buses and trains, one for notes. Traveler puts hotel
                 booking, transport booking and trip planning into a single
                 flow so you can build a Sri Lankan journey and pay for it once.
             </p>
@@ -132,30 +146,36 @@
             <div class="services-grid">
 
                 <div class="service-card">
+
                     <h3>Hotel booking</h3>
 
                     <p>
                         Compare stays across Sri Lanka, from guesthouses
                         to beach resorts, and reserve a room for your dates.
                     </p>
+
                 </div>
 
                 <div class="service-card">
+
                     <h3>Transport booking</h3>
 
                     <p>
                         Book trains, buses, cars with a driver or airport
                         transfers so every leg of the trip is covered.
                     </p>
+
                 </div>
 
                 <div class="service-card">
+
                     <h3>Trip planning</h3>
 
                     <p>
                         Choose destinations, dates, stay and transport
                         in one planner and see your full itinerary before you pay.
                     </p>
+
                 </div>
 
             </div>
@@ -265,9 +285,17 @@
                 in one planner.
             </p>
 
-            <a href="#planner" class="primary-button">
+            <a href="signup/index.html" class="primary-button">
                 Create an account
             </a>
+
+            <p class="login-prompt">
+                Already have an account?
+
+                <a href="signin/index.html">
+                    Sign in
+                </a>
+            </p>
 
         </div>
 
@@ -282,6 +310,7 @@
     </footer>
 
 
+    <!-- JAVASCRIPT -->
     <script src="js/script.js"></script>
 
 </body>

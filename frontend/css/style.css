@@ -132,6 +132,28 @@ h1, h2, h3 {
     transition: 0.3s;
 }
 
+.nav-auth {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.nav-signin {
+    background: var(--color-sun);
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid var(--color-sun);
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-signin:hover {
+    background: black;
+    color: var(--color-sun);
+}
+
 .nav-button:hover,
 .primary-button:hover {
     background: black;
@@ -218,11 +240,11 @@ h1, h2, h3 {
     line-height: 1.2;
     font-weight: 600;
     white-space: pre-line;
-    min-height: 2.4em;
+    height: 2.4em;
 }
 
 .hero p {
-    margin-top: 24px;
+    margin-top: 32px;
     max-width: 600px;
     font-size: 18px;
     line-height: 1.8;
@@ -233,7 +255,7 @@ h1, h2, h3 {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
-    margin-top: 32px;
+    margin-top: 40px;
 }
 
 #typing-text,
@@ -471,6 +493,7 @@ h1, h2, h3 {
 
     .hero h1 {
         font-size: 48px;
+        height: 3.6em;
     }
 
     .about {
@@ -497,6 +520,12 @@ h1, h2, h3 {
         height: 350px;
     }
 
+}
+
+@media (max-width: 440px) {
+    .hero h1 {
+        height: 4.8em;
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {

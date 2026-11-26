@@ -16,9 +16,9 @@ const reducedMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)"
 ).matches;
 
-if (reducedMotion) {
+if (typingText && reducedMotion) {
     typingText.textContent = fullText;
-} else {
+} else if (typingText) {
 
     function typeWriter() {
 
@@ -55,7 +55,7 @@ const slides = document.querySelectorAll(".hero-slide");
 
 let currentSlide = 0;
 
-if (!reducedMotion) {
+if (!reducedMotion && slides.length > 1) {
 
     setInterval(() => {
 
