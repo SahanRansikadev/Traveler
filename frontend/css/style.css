@@ -105,8 +105,9 @@ h1, h2, h3 {
 
 .logo {
     font-family: var(--font-display);
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 600;
+    line-height: 32px;
 }
 
 .logo:hover,
@@ -125,27 +126,28 @@ h1, h2, h3 {
 .nav-button {
     background: var(--color-sun);
     color: black;
-    padding: 10px 20px;
+    padding: 8px 20px;
     border-radius: 30px;
     font-size: 14px;
     font-weight: 600;
+    line-height: 20px;
     transition: 0.3s;
 }
 
 .nav-auth {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 16px;
 }
 
 .nav-signin {
     background: var(--color-sun);
     color: black;
-    padding: 10px 20px;
-    border: 1px solid var(--color-sun);
+    padding: 8px 20px;
     border-radius: 30px;
     font-size: 14px;
     font-weight: 600;
+    line-height: 20px;
     transition: 0.3s;
 }
 
@@ -166,13 +168,16 @@ h1, h2, h3 {
 .primary-button,
 .secondary-button {
     display: inline-block;
-    padding: 13px 28px;
+    padding: 12px 28px;
     border-radius: 50px;
     font-weight: 600;
+    line-height: 24px;
     transition: 0.3s;
 }
 
 .primary-button {
+    padding-top: 13px;
+    padding-bottom: 13px;
     background: var(--color-sun);
     color: black;
 }
@@ -232,22 +237,22 @@ h1, h2, h3 {
     width: 100%;
     max-width: 1152px;
     margin: auto;
-    padding: 100px 20px 40px;
+    padding: 96px 20px 0;
 }
 
 .hero h1 {
-    font-size: clamp(48px, 7vw, 80px);
-    line-height: 1.2;
+    font-size: 48px;
+    line-height: 1.25;
     font-weight: 600;
     white-space: pre-line;
-    height: 2.4em;
+    height: 2.5em;
 }
 
 .hero p {
-    margin-top: 32px;
-    max-width: 600px;
+    margin-top: 24px;
+    max-width: 576px;
     font-size: 18px;
-    line-height: 1.8;
+    line-height: 28px;
     color: rgba(255,255,255,0.85);
 }
 
@@ -255,7 +260,7 @@ h1, h2, h3 {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
-    margin-top: 40px;
+    margin-top: 32px;
 }
 
 #typing-text,
@@ -292,7 +297,7 @@ h1, h2, h3 {
 .section-container h2,
 .services h2,
 .planner h2 {
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 600;
 }
 
@@ -356,7 +361,7 @@ h1, h2, h3 {
 
 .how-title {
     margin-top: 80px;
-    font-size: 26px;
+    font-size: 24px;
 }
 
 .steps-grid {
@@ -437,7 +442,7 @@ h1, h2, h3 {
 }
 
 .destination-info h3 {
-    font-size: 32px;
+    font-size: 30px;
 }
 
 .destination-info p {
@@ -475,11 +480,29 @@ h1, h2, h3 {
 /* FOOTER */
 
 .footer {
-    padding: 28px 20px;
+    padding: 40px 20px;
     text-align: center;
     border-top: 1px solid var(--color-line);
+    background: #000;
     color: var(--color-muted);
     font-size: 14px;
+}
+
+.footer-brand {
+    color: var(--color-fg);
+    font-family: var(--font-display);
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.footer-tagline {
+    margin-top: 8px;
+    line-height: 20px;
+}
+
+.footer-copyright {
+    margin-top: 16px;
+    line-height: 20px;
 }
 
 
@@ -489,11 +512,6 @@ h1, h2, h3 {
 
     .nav-links {
         display: none;
-    }
-
-    .hero h1 {
-        font-size: 48px;
-        height: 3.6em;
     }
 
     .about {
@@ -522,9 +540,27 @@ h1, h2, h3 {
 
 }
 
+@media (min-width: 640px) {
+    .hero h1 {
+        font-size: 72px;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+    .hero h1 {
+        height: 3.75em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        height: 3.75em;
+    }
+}
+
 @media (max-width: 440px) {
     .hero h1 {
-        height: 4.8em;
+        height: 5em;
     }
 }
 
