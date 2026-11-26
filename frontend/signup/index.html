@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign up | Traveler</title>
+
+    <link rel="stylesheet" href="../css/auth.css">
+</head>
+
+<body>
+
+<main class="auth-page">
+
+    <div class="auth-background" aria-hidden="true">
+        <div class="auth-slide hero-slide active"
+            style="background-image:url('https://res.cloudinary.com/dt2xaqo32/image/upload/v1793453480/3558149_latkif.jpg')">
+        </div>
+        <div class="auth-slide hero-slide"
+            style="background-image:url('https://res.cloudinary.com/dt2xaqo32/image/upload/v1793454699/454952-sri-lanka-wallpaper_hl4gwv.jpg')">
+        </div>
+        <div class="auth-slide hero-slide"
+            style="background-image:url('https://res.cloudinary.com/dt2xaqo32/image/upload/v1793513222/Gemini_Generated_Image_aygsx2aygsx2aygs_eiuy8b.jpg')">
+        </div>
+        <div class="auth-slide hero-slide"
+            style="background-image:url('https://res.cloudinary.com/dt2xaqo32/image/upload/v1793544504/5d0ff2b4b6e6857f1e14ebf3b4fa1cd912f578b6a641a0e3d8271cfc5e1c891c_yoshoy.avif')">
+        </div>
+        <div class="auth-overlay"></div>
+    </div>
+
+    <header class="auth-header">
+        <a href="../index.html" class="auth-home-logo">Traveler</a>
+        <nav class="auth-nav" aria-label="Account">
+            <a href="../signin/index.html" class="auth-nav-button">Sign in</a>
+            <a href="index.html" class="auth-nav-button" aria-current="page">Sign up</a>
+        </nav>
+    </header>
+
+    <div class="auth-content">
+        <section class="auth-intro" aria-label="Traveler introduction">
+            <h1><span id="typing-text"></span><span class="cursor" aria-hidden="true"></span></h1>
+            <p>
+                Traveler is a Sri Lanka travel platform where you book your hotel,
+                book your transport and plan the whole trip, all in one place.
+            </p>
+            <div class="auth-hero-buttons">
+                <a href="#signupForm" class="auth-hero-primary">Get started</a>
+                <a href="../index.html#services" class="auth-hero-secondary">See what Traveler does</a>
+            </div>
+        </section>
+
+    <section class="auth-card">
+
+        <a href="../index.html" class="auth-close" aria-label="Close">
+            &times;
+        </a>
+
+        <h1 class="auth-title">Create account</h1>
+
+        <p class="auth-description">
+            Create an account and plan hotels, transport and trips in one place.
+        </p>
+
+        <form class="auth-form" id="signupForm">
+
+            <div class="auth-group">
+                <label for="signupName">Full name</label>
+
+                <input
+                    type="text"
+                    id="signupName"
+                    class="auth-input"
+                    placeholder="Your name"
+                    autocomplete="name"
+                    required
+                >
+            </div>
+
+            <div class="auth-group">
+                <label for="signupEmail">Email address</label>
+
+                <input
+                    type="email"
+                    id="signupEmail"
+                    class="auth-input"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                    required
+                >
+            </div>
+
+            <div class="auth-group">
+                <label for="signupPassword">Password</label>
+
+                <input
+                    type="password"
+                    id="signupPassword"
+                    class="auth-input"
+                    placeholder="At least 8 characters"
+                    minlength="8"
+                    autocomplete="new-password"
+                    required
+                >
+            </div>
+
+            <button type="submit" class="auth-button">
+                Create account
+            </button>
+
+            <div id="signupMessage" class="auth-message"></div>
+
+        </form>
+
+        <p class="auth-switch">
+            Already have an account?
+
+            <a href="../signin/index.html">
+                Sign in
+            </a>
+        </p>
+
+    </section>
+    </div>
+
+</main>
+
+<script src="../js/script.js"></script>
+<script src="../js/auth.js"></script>
+
+</body>
+</html>
